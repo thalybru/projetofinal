@@ -15,11 +15,11 @@
             height: 100vh;
             color: white;
             font-family: arial, Helvetica, sans-serif;
-
+            text-align: centter;
         }
         .calculadora{
             position: absolute;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.8);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -31,9 +31,23 @@
             height: 50px;
             font-size: 25px;
             cursor: pointer;
+            margin: 3px;
             background-color: rgb(31,31,31);
             border: none;
             color: #fff;
+        }
+        .botao:hover{
+            background-color: black;
+        }
+        #resultado{
+            background-color: white;
+            width: 207px;
+            heigth: 30px;
+            margin: 5px;
+            font-size: 25px;
+            color: black;
+            text-align: right;
+            padding: 5px;
         }
     
     </style>
@@ -43,7 +57,7 @@
         <h1>Thalyta Bruger</h1>
         <div class="calculadora">
             <h1>calculadora</h1>
-            <p id="resultado"></p>
+            <p id="resultado">resultado</p>
             <table>
                 <tr>
                    <td><button class="botao">C</button></td> 
@@ -67,10 +81,10 @@
                     <td><button class="botao">1</button></td> 
                     <td><button class="botao">2</button></td> 
                     <td><button class="botao">3</button></td> 
-                    <td rowpan="2"><button class="botao">=</button></td> 
+                    <td rowpan="2"><button class="botao" style="height: 106px;">=</button></td> 
                  </tr>
                  <tr>
-                    <td colspan="2"><button class="botao">0</button></td> 
+                    <td colspan="2"><button class="botao" style="width: 106px;">0</button></td> 
                     <td><button class="botao">.</button></td> 
                    
                  </tr>
